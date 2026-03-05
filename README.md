@@ -1,5 +1,6 @@
 <div align="center">
-<img src="images/tiktok_claims_banner.png" alt="TikTok Claims Classification Project Banner" width="800" />
+
+![TikTok Claims Classification Project Banner](./images/tiktok_claims_banner.png)
 <br>
 
 # TikTok Claims Classification Project
@@ -49,7 +50,7 @@ We analyzed **19,382 videos** to identify patterns that signal a "claim." The in
 This project was developed utilizing the **PACE** (Plan, Analyze, Construct, Execute) framework methodologies:
 
 <div align="center">
-<img src="images/pace_strategy_diagram.png" alt="PACE Strategy Framework Graphic" width="600" />
+![PACE Strategy Framework Graphic](./images/pace_strategy_diagram.png)
 </div>
 
 <br>
