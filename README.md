@@ -1,5 +1,4 @@
 <div align="center">
-
 <img src="images/tiktok_claims_banner.png" alt="TikTok Claims Classification Project Banner" width="800" />
 <br>
 
