@@ -1,5 +1,8 @@
 <div align="center">
 
+<img src="C:/Users/a/.gemini/antigravity/brain/104b5671-c8a7-4012-bd4e-50d72bf7bcf5/tiktok_claims_banner_1772685554386.png" alt="TikTok Claims Classification Project Banner" width="800" />
+<br>
+
 # TikTok Claims Classification Project
 
 <!-- Badges -->
@@ -31,19 +34,26 @@
 TikTok needs to automate the moderation of videos by distinguishing between **claims** (unverified information) and **opinions** (personal thoughts). Currently, the manual review process is backlogged. The goal of this project is to develop a machine learning model that streamlines the moderation process and provides a data-driven way to prioritize high-risk content for review.
 
 ### The Challenge
-We analyzed 19,382 videos to identify patterns that signal a "claim." The inspection phase focused on organizing the data, handling missing values (298 incomplete rows), and identifying key variables that drive continuous engagement and claim status.
+We analyzed **19,382 videos** to identify patterns that signal a "claim." The inspection phase focused on organizing the data, handling missing values (298 incomplete rows), and identifying key variables that drive continuous engagement and claim status.
 
 ### Built With
 
 *   ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 *   ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 *   ![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?&style=for-the-badge&logo=Jupyter&logoColor=white)
+*   ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
 
 ---
 
 ## 🧠 PACE Strategy Overview
 
 This project was developed utilizing the **PACE** (Plan, Analyze, Construct, Execute) framework methodologies:
+
+<div align="center">
+<img src="C:/Users/a/.gemini/antigravity/brain/104b5671-c8a7-4012-bd4e-50d72bf7bcf5/pace_strategy_diagram_1772685639272.png" alt="PACE Strategy Framework Graphic" width="600" />
+</div>
+
+<br>
 
 *   **Plan Stage:** Defined the distinct taxonomy for target variables ("Claim" vs. "Opinion"). Mapped variables to distinguish "signals" (e.g., view count) from "noise."
 *   **Analyze Stage:** Identified that user engagement metrics (video likes and shares) are heavily right-skewed. Built summary dataframe statistics highlighting "Extreme Means" requiring robust non-parametric handling.
@@ -56,11 +66,29 @@ This project was developed utilizing the **PACE** (Plan, Analyze, Construct, Exe
 
 Based on the Exploratory Data Analysis (EDA) and data preprocessing phase:
 
-- ⚖️ **A Balanced Foundation:** The dataset is split nearly evenly, with **50.3% claims** and **49.7% opinions**, providing a stable baseline for model training.
-- 📈 **The "Viral" Indicator:** Claim-based content is the primary driver of massive reach on the platform.
-  - **Claims Median Views:** 501,555
-  - **Opinions Median Views:** 4,953
-  - *High views are a near-certain indicator of a claim.*
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><strong>Metric</strong></td>
+      <td align="center"><strong>Claims</strong></td>
+      <td align="center"><strong>Opinions</strong></td>
+    </tr>
+    <tr>
+      <td align="center">Dataset Split</td>
+      <td align="center">50.3%</td>
+      <td align="center">49.7%</td>
+    </tr>
+    <tr>
+      <td align="center">Median Views</td>
+      <td align="center">501,555</td>
+      <td align="center">4,953</td>
+    </tr>
+  </table>
+  <em>High views are a near-certain indicator of a claim.</em>
+</div>
+
+<br>
+
 - 🚫 **Safety & Ban Correlation:** There is a significant correlation between account status and content type. Authors who are **banned or under review are 8x more likely** to have posted claims than opinions.
 - 🔍 **Verification Gap:** The vast majority of claim-type content originates from unverified accounts.
 
